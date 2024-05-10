@@ -1,0 +1,37 @@
+.round{
+    border-radius: 50%;
+}
+b{
+    font-size: 16px;
+}
+h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    font-size: 9px;
+}
+.line{
+    font-size:13px ;
+    font-weight: lighter;
+    margin: 20px;
+    padding: 30px;
+
+}
+
+.header{
+    align-items: start;
+    font-size: 20px;
+    
+}
+@media (max-width:767px){
+     body{
+       font-size: 14px;
+     }
+}
+@media(max-width: 1024px){
+    body{
+        font-size: 16px;
+    }
+}
+

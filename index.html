@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A website using grid</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .container{
+           display: grid;
+           grid-template-columns: 1fr 1fr 2fr;
+           background-color: aliceblue;
+        }
+        .item{
+            padding: 20px;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .special-one{
+            grid-column-start:1;
+            grid-column-end:3;
+            background-color: blueviolet;
+            border-radius: 4px;
+           height: 80%;
+            width: 90%;
+            
+            
+        }
+       .special-two{
+           background-color: grey; 
+           grid-column-start:3;
+           grid-column-end:4 ;
+           height: 80%;
+           width: 40%;
+           border-radius: 4px;
+           column-gap: 2px;
+
+           
+        }
+         .special-three{
+            background-color: whitesmoke;
+            
+            border-radius: 4px;
+            grid-row-start: 1 / span 3;
+        
+            align-self: self-start;
+            justify-self: end;
+            width: 40%;
+            height: 80%;
+
+         }
+        .special-four{
+
+            background-color:antiquewhite;
+           border-radius: 4px;
+           grid-row-start:2;
+           grid-column-end:2 ;
+           height:80% ;
+           width: 80%;
+        
+          
+        }
+        .special-five{
+            background-color:slategrey ;
+           border-radius: 4px;
+           grid-row-start:2;
+           grid-column-end:3 ;
+           width: 180%;
+           height: 80%;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item special-one">
+            
+            <img class="round" src="images/hyun.jpg" height="50px" width="50px" > <b> Daniel Cliffford </b> <br>   
+            <span class="line">Verified graduate</span> 
+          <h2> I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company i joined. I honestly feel I got every penny's worth</h2>
+          <p> "I was an EMT for many years before i joined bootcamp.I've been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter.The next 12 weeks was the best-and most grueling-time of my life. Since completing the course, I've successfully switched careers, working as a Software Engineer at a VR startup"</p>
+            </div>
+        <div class="item special-two">
+            <img class="round" src="images/ji.jpg" height="50px" width="50px"> <b>Jonathan Waters</b> <br>
+            <span class="line">Verified graduate</span>
+            <h2>The team was very supportive and kept me motivated</h2>
+            <p>"I started as a total newbie with virtually no coding skills.I now work as a mobile engineer for a big company. This was one of the best investments I've made in myself."</p>
+        </div>
+        <div class="item special-three">
+            <img class="round" src="images/bo.jpeg" height="50px" width="50px"> <b>Kira Whittle</b> <br>
+          <span class="line">Verified graduate</span>
+          <h2 class="header">Such a life-changing experience.Highly recommended!</h2>
+          <p class="para">"Before joining the bootcamp,I've never written a line of code.I needed some structures from proffesionals who can help me learn programming step by step.I was encouraged to enrol by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance.The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact,I've often referred to it during interviews as an example of my development exercise. It certainly helped land a job as a full-stack developer after receiving multiple offers.100% recommed!"</p>
+
+        </div> 
+        <div class="item special-four">
+            <img class="round" src="images/won.jpg" height="50px" width="50px"> <b>Jeanette Harmon</b> <br>
+           <span class="line">Verified graduate</span>
+           <h2>An overall wonderful and rewarding experience</h2>
+           <p>"Thank you for the wonderful experience! I now have a job I really enjoy and make a good living while doing something I love."</p>
+        </div>
+        <div class="item special-five"> 
+            <img class="round" src="images/kang.webp" height="50px" width="50px">  <b>Patrick Abrams</b> <br>
+          <span class="line">Verified graduate</span>
+          <h2>Awesome teaching support from TAs who did bootcamp themselves. Getting guidance from them and lerning from their experiences was easy.</h2>
+          <p>"The staff seemed genuinely concerned about my progress which I find really refreshing. The program gave me confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people"</p>
+        </div>
+    </div>
+</body>
+</html>
